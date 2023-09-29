@@ -1,0 +1,182 @@
+{
+  "metainfo" : {
+    "migrationVersions" : {
+      "gemBuilderVersion" : "v1"
+    },
+    "id" : "1",
+    "uri" : "pipelines/bug_repro_escape",
+    "language" : "python",
+    "fabricId" : "5490",
+    "frontEndLanguage" : "sql",
+    "mode" : "batch",
+    "udfs" : {
+      "language" : "python",
+      "udfs" : [ ],
+      "functionPackageName" : "yuvrajprophecyioteam.pythonproject.functions",
+      "sharedFunctionPackageNames" : [ "prophecy.spark_basic.functions", "prophecy.warehouse.functions" ]
+    },
+    "udafs" : {
+      "language" : "python",
+      "code" : ""
+    },
+    "configuration" : {
+      "common" : {
+        "type" : "record",
+        "fields" : [ {
+          "name" : "raw_schema",
+          "kind" : {
+            "type" : "string",
+            "value" : "test_escape_raw_schema_value"
+          },
+          "optional" : false,
+          "isWorkflowNodeConfiguration" : false,
+          "isReferenced" : false
+        } ]
+      },
+      "oldCommon" : {
+        "type" : "record",
+        "fields" : [ ]
+      },
+      "fabrics" : { },
+      "instances" : { },
+      "selected" : "default",
+      "nonEditable" : [ ],
+      "isSubscribedPipelineWithPipelineConfigs" : false
+    },
+    "sparkConf" : [ ],
+    "hadoopConf" : [ ],
+    "codeMode" : "sparse",
+    "buildSystem" : "maven",
+    "externalDependencies" : [ ],
+    "dependentProjectExternalDependencies" : [ {
+      "projectUID" : "12654",
+      "projectName" : "ProphecySparkBasicsPython",
+      "externalDependencies" : [ ]
+    }, {
+      "projectUID" : "12655",
+      "projectName" : "ProphecyWarehousePython",
+      "externalDependencies" : [ ]
+    } ],
+    "isImported" : false,
+    "interimMode" : "Full",
+    "interimModeEnabled" : true,
+    "visualCodeInterimMode" : "Disabled",
+    "recordsLimit" : {
+      "enabled" : false,
+      "value" : 1000
+    },
+    "topLevelPackage" : "bug_repro_escape",
+    "configurationVersion" : "v1"
+  },
+  "connections" : [ {
+    "id" : "31D0BHXutn1S99hlaC3Wh",
+    "source" : "hOsHNu0Q8tTeZ9ims5dZ_$$JSnfvzqXSej7Hf2CWhlF_",
+    "sourcePort" : "gGUKDlIi1qvMUwY9hw18n$$vRO8H1h8GNCTh9l2D-R8r",
+    "target" : "7-_h9MOlQ5SyHgxxHDGrE$$exgvHIqL3AElF5EowkQ-x",
+    "targetPort" : "mBME1pq0QzRjLdzQ2iazR$$z43gXzSLdcWbBr0hW7yDH"
+  } ],
+  "processes" : {
+    "hOsHNu0Q8tTeZ9ims5dZ_$$JSnfvzqXSej7Hf2CWhlF_" : {
+      "id" : "hOsHNu0Q8tTeZ9ims5dZ_$$JSnfvzqXSej7Hf2CWhlF_",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "src_avro_CustsDatasetInput",
+        "slug" : "src_avro_CustsDatasetInput",
+        "x" : -1780,
+        "y" : -560,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "gGUKDlIi1qvMUwY9hw18n$$vRO8H1h8GNCTh9l2D-R8r",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "datasetId" : "datasets/test-escape-dataset"
+      }
+    },
+    "7-_h9MOlQ5SyHgxxHDGrE$$exgvHIqL3AElF5EowkQ-x" : {
+      "id" : "7-_h9MOlQ5SyHgxxHDGrE$$exgvHIqL3AElF5EowkQ-x",
+      "component" : "Script",
+      "metadata" : {
+        "label" : "DONOT_DELETE",
+        "slug" : "DONOT_DELETE",
+        "x" : -1420,
+        "y" : -560,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "mBME1pq0QzRjLdzQ2iazR$$z43gXzSLdcWbBr0hW7yDH",
+          "slug" : "in0",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "c_int",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "outputs" : [ {
+          "id" : "IND7vUhHYdJqfvbt7zIov$$Vf3YTTrWDO_6gDqXw9ky4",
+          "slug" : "out0",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "isStreaming" : false
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : true,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "script" : "print(f\"String: {Config.raw_schema}\")\nout0=in0",
+        "scriptMethodHeader" : "def Script(spark: SparkSession, in0: DataFrame) -> DataFrame:",
+        "scriptMethodFooter" : "    return out0"
+      }
+    }
+  },
+  "ports" : {
+    "inputs" : [ ],
+    "outputs" : [ ],
+    "selectedInputFields" : [ ],
+    "isCustomOutputSchema" : false,
+    "autoUpdateOnRun" : false
+  },
+  "diagnostics" : [ {
+    "property" : "$.workflow.processes.7-_h9MOlQ5SyHgxxHDGrE$$exgvHIqL3AElF5EowkQ-x.ports.outputs",
+    "range" : {
+      "start" : {
+        "line" : 0,
+        "character" : 0
+      },
+      "end" : {
+        "line" : 0,
+        "character" : 0
+      }
+    },
+    "severity" : 3,
+    "message" : "Please infer output schema from the cluster",
+    "tags" : [ ],
+    "relatedInformation" : [ ]
+  } ]
+}
