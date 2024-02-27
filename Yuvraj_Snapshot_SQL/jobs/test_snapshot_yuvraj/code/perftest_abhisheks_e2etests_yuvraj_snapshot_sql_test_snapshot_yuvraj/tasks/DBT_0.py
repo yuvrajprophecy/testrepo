@@ -13,7 +13,7 @@ def DBT_0():
         dbt_props_cmd = " --profile run_profile_snowflake"
 
     if "orders_model":
-        dbt_props_cmd = dbt_props_cmd + " -m " + "orders_model"
+        dbt_props_cmd = dbt_props_cmd + " -m " + "+orders_model"
 
     return BashOperator(
         task_id = "DBT_0",

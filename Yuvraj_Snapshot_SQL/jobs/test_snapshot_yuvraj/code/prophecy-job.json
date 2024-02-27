@@ -84,7 +84,7 @@
       "properties" : {
         "cacheSelectedOnly" : null,
         "gitSubPath" : null,
-        "runModelWithParents" : false,
+        "runModelWithParents" : true,
         "defer" : null,
         "noDefer" : null,
         "runSeed" : true,
