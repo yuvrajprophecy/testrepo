@@ -111,7 +111,7 @@
         "failFast" : null,
         "noStaticParser" : null,
         "loadingModels" : false,
-        "runTest" : false,
+        "runTest" : true,
         "select" : null,
         "recordTimingInfo" : null,
         "fullRefresh" : null,

@@ -18,7 +18,7 @@ def DBT_0():
     return BashOperator(
         task_id = "DBT_0",
         bash_command = f'''{" && ".join(
-          ["set -euxo pipefail && tmpDir=`mktemp -d` && git clone https://github.com/yuvrajprophecy/testrepo --branch test --single-branch $tmpDir && cd $tmpDir/Yuvraj_Snapshot_SQL",            "dbt seed" + dbt_props_cmd,  "dbt run" + dbt_props_cmd]
+          ["set -euxo pipefail && tmpDir=`mktemp -d` && git clone https://github.com/yuvrajprophecy/testrepo --branch test --single-branch $tmpDir && cd $tmpDir/Yuvraj_Snapshot_SQL",            "dbt seed" + dbt_props_cmd,  "dbt run" + dbt_props_cmd,  "dbt test" + dbt_props_cmd]
         )}''',
         env = envs,
         append_env = True,
