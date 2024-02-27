@@ -1,0 +1,154 @@
+{
+  "id" : "orders_model",
+  "metainfo" : {
+    "label" : "orders_model",
+    "autoLayout" : false,
+    "staleState" : "none",
+    "sourceSuggestions" : {
+      "sources" : [ ]
+    },
+    "version" : 3
+  },
+  "processes" : {
+    "orders_model##E9k300j5" : {
+      "id" : "orders_model##E9k300j5",
+      "component" : "TargetModel",
+      "metadata" : {
+        "label" : "orders_model",
+        "x" : 20,
+        "y" : 20,
+        "phase" : 0,
+        "macroDependencies" : [ ]
+      },
+      "properties" : {
+        "customQueryDisabled" : true,
+        "customQuery" : false,
+        "incrementalEditorDisabled" : true,
+        "query" : "SELECT * \n\nFROM test_orders\n",
+        "incrementalKey" : false,
+        "incremental" : {
+          "expression" : "true"
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "sfdYpto8",
+          "schema" : {
+            "providerType" : "Snowflake",
+            "fields" : [ {
+              "name" : "order_id",
+              "dataType" : {
+                "type" : "Number"
+              }
+            }, {
+              "name" : "order_amount",
+              "dataType" : {
+                "type" : "Number"
+              }
+            }, {
+              "name" : "status",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "change_date",
+              "dataType" : {
+                "type" : "Date"
+              }
+            } ]
+          },
+          "slug" : "test_orders"
+        } ],
+        "outputs" : [ {
+          "id" : "jeUQODsx",
+          "schema" : {
+            "providerType" : "Snowflake",
+            "fields" : [ {
+              "name" : "ORDER_ID",
+              "dataType" : {
+                "type" : "Number"
+              }
+            }, {
+              "name" : "ORDER_AMOUNT",
+              "dataType" : {
+                "type" : "Number"
+              }
+            }, {
+              "name" : "STATUS",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "CHANGE_DATE",
+              "dataType" : {
+                "type" : "Date"
+              }
+            } ]
+          },
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    },
+    "Oj4sRT1WTwGkCQoEXJRUz" : {
+      "id" : "Oj4sRT1WTwGkCQoEXJRUz",
+      "component" : "Seed",
+      "metadata" : {
+        "label" : "test_orders",
+        "slug" : "test_orders",
+        "x" : -160,
+        "y" : 20,
+        "phase" : 0
+      },
+      "properties" : {
+        "table" : {
+          "name" : "test_orders",
+          "sourceType" : "Seed",
+          "alias" : ""
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "78310vwlzhxqio0y9jl9P",
+          "schema" : {
+            "providerType" : "Snowflake",
+            "fields" : [ {
+              "name" : "order_id",
+              "dataType" : {
+                "type" : "Number"
+              }
+            }, {
+              "name" : "order_amount",
+              "dataType" : {
+                "type" : "Number"
+              }
+            }, {
+              "name" : "status",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "change_date",
+              "dataType" : {
+                "type" : "Date"
+              }
+            } ]
+          },
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    }
+  },
+  "connections" : [ {
+    "id" : "Q_k31eAlsS1Gqqbs3v0gy$$sbs5rw2WT9pNSSGSO6kYu",
+    "source" : "Oj4sRT1WTwGkCQoEXJRUz",
+    "sourcePort" : "78310vwlzhxqio0y9jl9P",
+    "target" : "orders_model##E9k300j5",
+    "targetPort" : "sfdYpto8"
+  } ],
+  "component" : "Model"
+}

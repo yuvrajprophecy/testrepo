@@ -1,0 +1,252 @@
+{
+  "metainfo" : {
+    "type" : "Composer",
+    "fabricId" : "65",
+    "jobId" : "jobs/test_snapshot_yuvraj",
+    "name" : "test_snapshot_yuvraj",
+    "dagName" : "perftest_abhisheks_e2etests_Yuvraj_Snapshot_SQL_test_snapshot_yuvraj",
+    "schedule" : "None",
+    "enabled" : false,
+    "alerting" : {
+      "emails" : "",
+      "onStart" : false,
+      "onSuccess" : false,
+      "onFailure" : false
+    },
+    "maxConcurrentRuns" : 1,
+    "processDefaultSettings" : {
+      "ignore_first_depends_on_past" : true,
+      "do_xcom_push" : true
+    },
+    "availableFabrics" : [ {
+      "id" : "65",
+      "name" : "dev_airflow_253"
+    }, {
+      "id" : "60",
+      "name" : "dev_airflow_prophecy_managed",
+      "trialStartDate" : 1702453157825
+    }, {
+      "id" : "63",
+      "name" : "dev_airflow"
+    }, {
+      "id" : "66",
+      "name" : "dev_airflow_mwaa"
+    }, {
+      "id" : "760",
+      "name" : "Automation_AirflowOpenSource",
+      "artifactsLocation" : "/mnt/airflow/artifacts"
+    }, {
+      "id" : "963",
+      "name" : "Automation_scala_AirflowOpenSource",
+      "artifactsLocation" : "/mnt/airflow/artifacts"
+    }, {
+      "id" : "996",
+      "name" : "Automation_python_AirflowOpenSource",
+      "artifactsLocation" : "/mnt/airflow/test/artifacts"
+    } ],
+    "catchup" : true,
+    "scheduleTimeZone" : "UTC",
+    "dagParams" : {
+      "instances" : {
+        "default" : { }
+      },
+      "params" : { },
+      "selected" : "default"
+    },
+    "airflowFunctions" : [ ],
+    "dynamicPipelineStatus" : {
+      "databricks" : false,
+      "dataproc" : false,
+      "emr" : false
+    }
+  },
+  "processes" : {
+    "Dl-jvBNTFLR2Tmki_OvtM$$P295LnsDc0VlMP8YMIDxn" : {
+      "id" : "Dl-jvBNTFLR2Tmki_OvtM$$P295LnsDc0VlMP8YMIDxn",
+      "component" : "DBT",
+      "metadata" : {
+        "label" : "DBT_0",
+        "slug" : "DBT_0",
+        "x" : -660,
+        "y" : -300
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "4WFm8OTJm9Zn04HU136sa$$iFjax3o8B_SdsOox8AQiD",
+          "slug" : ""
+        } ],
+        "outputs" : [ {
+          "id" : "LPlCxl4f_HtVCW716skYo$$_0vosvcUlWqC2dhIsqWrK",
+          "slug" : ""
+        } ]
+      },
+      "settings" : { },
+      "properties" : {
+        "cacheSelectedOnly" : null,
+        "gitSubPath" : null,
+        "runModelWithParents" : false,
+        "defer" : null,
+        "noDefer" : null,
+        "runSeed" : true,
+        "gitEntity" : "branch",
+        "noPartialParse" : null,
+        "model" : "orders_model",
+        "warnErrorOptions" : null,
+        "gitTokenSecret" : null,
+        "state" : null,
+        "useExperimentalParser" : null,
+        "currentProjectSnapshots" : null,
+        "gitSshUrl" : null,
+        "indirectSelection" : null,
+        "partialParse" : null,
+        "runRun" : true,
+        "vars" : null,
+        "runSnapshots" : false,
+        "noPrint" : null,
+        "quiet" : null,
+        "projectId" : "4262",
+        "runMode" : "model",
+        "runOnlyModel" : false,
+        "favorState" : null,
+        "failFast" : null,
+        "noStaticParser" : null,
+        "loadingModels" : false,
+        "runTest" : false,
+        "select" : null,
+        "recordTimingInfo" : null,
+        "fullRefresh" : null,
+        "noCacheSelectedOnly" : null,
+        "noFavorState" : null,
+        "snapshot" : null,
+        "isProphecyManaged" : false,
+        "profile" : null,
+        "noVersionCheck" : null,
+        "noWriteJson" : false,
+        "printerWidth" : null,
+        "sqlFabricId" : "59",
+        "gitEntityValue" : "test",
+        "logFormat" : null,
+        "runModelWithChildren" : false,
+        "dbtProfileSecret" : null,
+        "target" : null,
+        "exclude" : null,
+        "runDeps" : false,
+        "loadingSnapshots" : false,
+        "noAnonymousUsageStats" : null,
+        "selector" : null,
+        "targetPath" : null,
+        "threads" : null,
+        "warnError" : null,
+        "currentProjectModels" : [ {
+          "label" : "orders_model",
+          "value" : "orders_model",
+          "id" : "4262/.prophecy/metadata/sqlmodels/orders_model",
+          "name" : "orders_model"
+        } ],
+        "profilesDir" : null,
+        "taskId" : null,
+        "logPath" : null,
+        "storeFailures" : null
+      },
+      "connections" : [ ],
+      "processes" : { }
+    },
+    "jjny-2RVTvlUxPct8HcGO$$zpNKnn-QC2ie53Z_JuICz" : {
+      "id" : "jjny-2RVTvlUxPct8HcGO$$zpNKnn-QC2ie53Z_JuICz",
+      "component" : "DBT",
+      "metadata" : {
+        "label" : "DBT_1",
+        "slug" : "DBT_1",
+        "x" : -520,
+        "y" : -300
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "nDM332ztw41kMFgIhQKiZ$$JHN7IkvJrwFFQgyvnriw7",
+          "slug" : ""
+        } ],
+        "outputs" : [ {
+          "id" : "oAnX6EQBWwRiY9QnHXVWx$$NcIT8Tm86iy-seL0Tlt6u",
+          "slug" : ""
+        } ]
+      },
+      "settings" : { },
+      "properties" : {
+        "cacheSelectedOnly" : null,
+        "gitSubPath" : null,
+        "runModelWithParents" : false,
+        "defer" : null,
+        "noDefer" : null,
+        "runSeed" : false,
+        "gitEntity" : "branch",
+        "noPartialParse" : null,
+        "model" : null,
+        "warnErrorOptions" : null,
+        "gitTokenSecret" : null,
+        "state" : null,
+        "useExperimentalParser" : null,
+        "currentProjectSnapshots" : null,
+        "gitSshUrl" : null,
+        "indirectSelection" : null,
+        "partialParse" : null,
+        "runRun" : true,
+        "vars" : null,
+        "runSnapshots" : true,
+        "noPrint" : null,
+        "quiet" : null,
+        "projectId" : "4262",
+        "runMode" : "snapshot",
+        "runOnlyModel" : false,
+        "favorState" : null,
+        "failFast" : null,
+        "noStaticParser" : null,
+        "loadingModels" : false,
+        "runTest" : false,
+        "select" : null,
+        "recordTimingInfo" : null,
+        "fullRefresh" : null,
+        "noCacheSelectedOnly" : null,
+        "noFavorState" : null,
+        "snapshot" : "orders_snapshot",
+        "isProphecyManaged" : false,
+        "profile" : null,
+        "noVersionCheck" : null,
+        "noWriteJson" : false,
+        "printerWidth" : null,
+        "sqlFabricId" : "59",
+        "gitEntityValue" : "test",
+        "logFormat" : null,
+        "runModelWithChildren" : false,
+        "dbtProfileSecret" : null,
+        "target" : null,
+        "exclude" : null,
+        "runDeps" : false,
+        "loadingSnapshots" : false,
+        "noAnonymousUsageStats" : null,
+        "selector" : null,
+        "targetPath" : null,
+        "threads" : null,
+        "warnError" : null,
+        "currentProjectModels" : [ {
+          "label" : "orders_model",
+          "value" : "orders_model",
+          "id" : "4262/.prophecy/metadata/sqlmodels/orders_model",
+          "name" : "orders_model"
+        } ],
+        "profilesDir" : null,
+        "taskId" : null,
+        "logPath" : null,
+        "storeFailures" : null
+      },
+      "connections" : [ ],
+      "processes" : { }
+    }
+  },
+  "connections" : [ {
+    "id" : "yPhhhcb8I3jZEEd-SkM_6",
+    "source" : "Dl-jvBNTFLR2Tmki_OvtM$$P295LnsDc0VlMP8YMIDxn",
+    "target" : "jjny-2RVTvlUxPct8HcGO$$zpNKnn-QC2ie53Z_JuICz",
+    "sourcePort" : "LPlCxl4f_HtVCW716skYo$$_0vosvcUlWqC2dhIsqWrK",
+    "targetPort" : "nDM332ztw41kMFgIhQKiZ$$JHN7IkvJrwFFQgyvnriw7"
+  } ]
+}

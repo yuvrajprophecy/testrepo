@@ -8,7 +8,30 @@ buildSystemDetails: null
 pipelines: {}
 datasets: {}
 templates: {}
-jobs: {}
+jobs:
+  jobs/test_snapshot_yuvraj:
+    name: test_snapshot_yuvraj
+    description: ''
+    fabricUID: 65
+    scheduler:
+      Composer: {}
+    cloudProvider: null
+    jobSize: null
+    scheduleCron: None
+    timeout: null
+    alerting:
+      emails: ''
+      onStart: false
+      onSuccess: false
+      onFailure: false
+    pipelines: []
+    jobClusterMode:
+      clusterMode:
+        Single: {}
+      clusterId: null
+    enabled: null
+    createdAt: '2024-02-27 08:21:05'
+    author: abhisheks+e2etests@prophecy.io
 gemContainer:
   languageVersion: ''
   gemLibsVersion: ''
@@ -22,9 +45,57 @@ functions:
   expressions: {}
   airflowFunctions: {}
 subgraphs: {}
-sqlModels: {}
+sqlModels:
+  .prophecy/metadata/sqlmodels/orders_model:
+    name: orders_model
+    schema:
+      providerType: Snowflake
+      fields:
+      - name: ORDER_ID
+        dataType:
+          type: Number
+      - name: ORDER_AMOUNT
+        dataType:
+          type: Number
+      - name: STATUS
+        dataType:
+          type: String
+      - name: CHANGE_DATE
+        dataType:
+          type: Date
+    description: null
+    author: abhisheks+e2etests@prophecy.io
+    files:
+    - models/orders_model.sql
+    - .prophecy/ide/models/orders_model.json
+    sqlDependencies:
+      models: []
+      datasets: []
+    createdAt: '2024-02-27 08:06:36'
 sqlMacros: {}
-sqlSeeds: {}
+sqlSeeds:
+  .prophecy/metadata/sqlseeds/test_orders:
+    name: test_orders
+    schema:
+      providerType: Snowflake
+      fields:
+      - name: order_id
+        dataType:
+          type: Number
+      - name: order_amount
+        dataType:
+          type: Number
+      - name: status
+        dataType:
+          type: String
+      - name: change_date
+        dataType:
+          type: Date
+    description: null
+    author: abhisheks+e2etests@prophecy.io
+    files:
+    - seeds/test_orders.csv
+    createdAt: '2024-02-27 08:09:42'
 sqlSources: {}
 sqlUnreferencedSources: {}
 sqlPipeline:

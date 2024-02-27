@@ -1,0 +1,159 @@
+{
+  "id" : "orders_snapshot",
+  "metainfo" : {
+    "label" : "orders_snapshot",
+    "autoLayout" : false,
+    "staleState" : "file",
+    "sourceSuggestions" : {
+      "sources" : [ ]
+    },
+    "graphConfig" : {
+      "entityConfig" : {
+        "strategy" : "'timestamp'",
+        "updated_at" : "\"CHANGE_DATE\"",
+        "target_schema" : "\"SNAPSHOT\"",
+        "target_database" : "\"JAFFLE_SHOP\"",
+        "unique_key" : "\"ORDER_ID\"",
+        "type" : "SnapshotConfig"
+      }
+    },
+    "version" : 3
+  },
+  "processes" : {
+    "orders_snapshot##uTxwS02O" : {
+      "id" : "orders_snapshot##uTxwS02O",
+      "component" : "TargetSnapshot",
+      "metadata" : {
+        "label" : "orders_snapshot",
+        "x" : 20,
+        "y" : 20,
+        "phase" : 0,
+        "macroDependencies" : [ ]
+      },
+      "properties" : {
+        "query" : "SELECT * \n\nFROM orders_model\n",
+        "customQuery" : false,
+        "customQueryDisabled" : true
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "HTZfHIZp",
+          "schema" : {
+            "providerType" : "Snowflake",
+            "fields" : [ {
+              "name" : "ORDER_ID",
+              "dataType" : {
+                "type" : "Number"
+              }
+            }, {
+              "name" : "ORDER_AMOUNT",
+              "dataType" : {
+                "type" : "Number"
+              }
+            }, {
+              "name" : "STATUS",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "CHANGE_DATE",
+              "dataType" : {
+                "type" : "Date"
+              }
+            } ]
+          },
+          "slug" : "orders_model"
+        } ],
+        "outputs" : [ {
+          "id" : "axbnHNM8",
+          "schema" : {
+            "providerType" : "Snowflake",
+            "fields" : [ {
+              "name" : "ORDER_ID",
+              "dataType" : {
+                "type" : "Number"
+              }
+            }, {
+              "name" : "ORDER_AMOUNT",
+              "dataType" : {
+                "type" : "Number"
+              }
+            }, {
+              "name" : "STATUS",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "CHANGE_DATE",
+              "dataType" : {
+                "type" : "Date"
+              }
+            } ]
+          },
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    },
+    "gWxlrkI8Kg1U_kXR6LaOa" : {
+      "id" : "gWxlrkI8Kg1U_kXR6LaOa",
+      "component" : "Model",
+      "metadata" : {
+        "label" : "orders_model",
+        "slug" : "orders_model",
+        "x" : -180,
+        "y" : 20,
+        "phase" : 0
+      },
+      "properties" : {
+        "table" : {
+          "name" : "orders_model",
+          "sourceType" : "Model",
+          "alias" : ""
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "93SBJPX6uDqFt4UFBrfA3",
+          "schema" : {
+            "providerType" : "Snowflake",
+            "fields" : [ {
+              "name" : "ORDER_ID",
+              "dataType" : {
+                "type" : "Number"
+              }
+            }, {
+              "name" : "ORDER_AMOUNT",
+              "dataType" : {
+                "type" : "Number"
+              }
+            }, {
+              "name" : "STATUS",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "CHANGE_DATE",
+              "dataType" : {
+                "type" : "Date"
+              }
+            } ]
+          },
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    }
+  },
+  "connections" : [ {
+    "id" : "H4gXT7UUi88mykO48uqEf$$53g87yGr8cQLchuR-Ja3F",
+    "source" : "gWxlrkI8Kg1U_kXR6LaOa",
+    "sourcePort" : "93SBJPX6uDqFt4UFBrfA3",
+    "target" : "orders_snapshot##uTxwS02O",
+    "targetPort" : "HTZfHIZp"
+  } ],
+  "component" : "Snapshot"
+}
