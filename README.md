@@ -1,1 +1,0 @@
-# External_Git_Project_1 Repository
