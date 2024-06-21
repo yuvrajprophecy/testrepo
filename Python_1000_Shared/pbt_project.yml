@@ -275,83 +275,83 @@ pipelineConfigurations:
     author: abhisheks+e2etests@prophecy.io
     createdAt: '2024-06-21 10:11:38'
     configurations:
-      pipelineConfigurations/1000ConfigPythonHotfix/python_100_instances_pip_7UhWV/config_1:
+      pipelineConfigurations/1000ConfigPythonHotfix/python_100_instances_pip_7UhWV/config_1.json:
         name: config_1
         author: null
         createdAt: '2024-06-21 10:11:38'
-      pipelineConfigurations/1000ConfigPythonHotfix/python_100_instances_pip_7UhWV/config_2:
+      pipelineConfigurations/1000ConfigPythonHotfix/python_100_instances_pip_7UhWV/config_2.json:
         name: config_2
         author: null
         createdAt: '2024-06-21 10:11:38'
-      pipelineConfigurations/1000ConfigPythonHotfix/python_100_instances_pip_7UhWV/config_3:
+      pipelineConfigurations/1000ConfigPythonHotfix/python_100_instances_pip_7UhWV/config_3.json:
         name: config_3
         author: null
         createdAt: '2024-06-21 10:11:38'
-      pipelineConfigurations/1000ConfigPythonHotfix/python_100_instances_pip_7UhWV/config_4:
+      pipelineConfigurations/1000ConfigPythonHotfix/python_100_instances_pip_7UhWV/config_4.json:
         name: config_4
         author: null
         createdAt: '2024-06-21 10:11:38'
-      pipelineConfigurations/1000ConfigPythonHotfix/python_100_instances_pip_7UhWV/config_5:
+      pipelineConfigurations/1000ConfigPythonHotfix/python_100_instances_pip_7UhWV/config_5.json:
         name: config_5
         author: null
         createdAt: '2024-06-21 10:11:38'
-      pipelineConfigurations/1000ConfigPythonHotfix/python_100_instances_pip_7UhWV/config_6:
+      pipelineConfigurations/1000ConfigPythonHotfix/python_100_instances_pip_7UhWV/config_6.json:
         name: config_6
         author: null
         createdAt: '2024-06-21 10:11:38'
-      pipelineConfigurations/1000ConfigPythonHotfix/python_100_instances_pip_7UhWV/config_7:
+      pipelineConfigurations/1000ConfigPythonHotfix/python_100_instances_pip_7UhWV/config_7.json:
         name: config_7
         author: null
         createdAt: '2024-06-21 10:11:38'
-      pipelineConfigurations/1000ConfigPythonHotfix/python_100_instances_pip_7UhWV/config_8:
+      pipelineConfigurations/1000ConfigPythonHotfix/python_100_instances_pip_7UhWV/config_8.json:
         name: config_8
         author: null
         createdAt: '2024-06-21 10:11:38'
-      pipelineConfigurations/1000ConfigPythonHotfix/python_100_instances_pip_7UhWV/config_9:
+      pipelineConfigurations/1000ConfigPythonHotfix/python_100_instances_pip_7UhWV/config_9.json:
         name: config_9
         author: null
         createdAt: '2024-06-21 10:11:38'
-      pipelineConfigurations/1000ConfigPythonHotfix/python_100_instances_pip_7UhWV/config_10:
+      pipelineConfigurations/1000ConfigPythonHotfix/python_100_instances_pip_7UhWV/config_10.json:
         name: config_10
         author: null
         createdAt: '2024-06-21 10:11:38'
-      pipelineConfigurations/1000ConfigPythonHotfix/python_100_instances_pip_7UhWV/config_11:
+      pipelineConfigurations/1000ConfigPythonHotfix/python_100_instances_pip_7UhWV/config_11.json:
         name: config_11
         author: null
         createdAt: '2024-06-21 10:11:38'
-      pipelineConfigurations/1000ConfigPythonHotfix/python_100_instances_pip_7UhWV/config_12:
+      pipelineConfigurations/1000ConfigPythonHotfix/python_100_instances_pip_7UhWV/config_12.json:
         name: config_12
         author: null
         createdAt: '2024-06-21 10:11:38'
-      pipelineConfigurations/1000ConfigPythonHotfix/python_100_instances_pip_7UhWV/config_13:
+      pipelineConfigurations/1000ConfigPythonHotfix/python_100_instances_pip_7UhWV/config_13.json:
         name: config_13
         author: null
         createdAt: '2024-06-21 10:11:38'
-      pipelineConfigurations/1000ConfigPythonHotfix/python_100_instances_pip_7UhWV/config_14:
+      pipelineConfigurations/1000ConfigPythonHotfix/python_100_instances_pip_7UhWV/config_14.json:
         name: config_14
         author: null
         createdAt: '2024-06-21 10:11:38'
-      pipelineConfigurations/1000ConfigPythonHotfix/python_100_instances_pip_7UhWV/config_15:
+      pipelineConfigurations/1000ConfigPythonHotfix/python_100_instances_pip_7UhWV/config_15.json:
         name: config_15
         author: null
         createdAt: '2024-06-21 10:11:38'
-      pipelineConfigurations/1000ConfigPythonHotfix/python_100_instances_pip_7UhWV/config_16:
+      pipelineConfigurations/1000ConfigPythonHotfix/python_100_instances_pip_7UhWV/config_16.json:
         name: config_16
         author: null
         createdAt: '2024-06-21 10:11:38'
-      pipelineConfigurations/1000ConfigPythonHotfix/python_100_instances_pip_7UhWV/config_17:
+      pipelineConfigurations/1000ConfigPythonHotfix/python_100_instances_pip_7UhWV/config_17.json:
         name: config_17
         author: null
         createdAt: '2024-06-21 10:11:38'
-      pipelineConfigurations/1000ConfigPythonHotfix/python_100_instances_pip_7UhWV/config_18:
+      pipelineConfigurations/1000ConfigPythonHotfix/python_100_instances_pip_7UhWV/config_18.json:
         name: config_18
         author: null
         createdAt: '2024-06-21 10:11:38'
-      pipelineConfigurations/1000ConfigPythonHotfix/python_100_instances_pip_7UhWV/config_19:
+      pipelineConfigurations/1000ConfigPythonHotfix/python_100_instances_pip_7UhWV/config_19.json:
         name: config_19
         author: null
         createdAt: '2024-06-21 10:11:38'
-      pipelineConfigurations/1000ConfigPythonHotfix/python_100_instances_pip_7UhWV/config_20:
+      pipelineConfigurations/1000ConfigPythonHotfix/python_100_instances_pip_7UhWV/config_20.json:
         name: config_20
         author: null
         createdAt: '2024-06-21 10:11:38'
