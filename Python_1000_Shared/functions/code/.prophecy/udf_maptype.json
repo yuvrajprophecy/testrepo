@@ -1,0 +1,1 @@
+{"initCode":"initial=10","code":"@udf(returnType=ArrayType(StructType([\n    StructField(\"char\", StringType(), False),\n    StructField(\"count\", IntegerType(), False)\n])))\ndef udf_maptype():\n    return [{\"char\": \"char1\", \"count\": 10}]"}

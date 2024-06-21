@@ -1,0 +1,1 @@
+{"initCode":"initial=10","code":"@udf(returnType=TimestampType())\ndef udf_timestamptype(value):\n    return to_timestamp(value)"}

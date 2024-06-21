@@ -1,0 +1,1 @@
+{"initCode":"initial=10","code":"@udf(returnType=StringType())\ndef random_string(length, extra_characters=\"\"):\n    import string, random\n    length=int(length) if length is not None else 2\n    return \"\".join([random.choice(string.ascii_lowercase + string.ascii_uppercase + string.digits + extra_characters) for _ in range(length)])"}

@@ -1,0 +1,1 @@
+{"initCode":"initial=10","code":"@udf(returnType=DateType())\ndef udf_datetype(value):\n    return to_date(value)"}

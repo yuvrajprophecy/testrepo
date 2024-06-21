@@ -1,0 +1,1 @@
+{"initCode":"initial=10","code":"@udf(returnType=StringType())\ndef udf_scipy_dependency():\n    from scipy.special import cbrt\n    cb = cbrt([27, 64])\n    return str(cb[0])"}

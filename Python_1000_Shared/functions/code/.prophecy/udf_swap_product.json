@@ -1,0 +1,1 @@
+{"initCode":"initial=10","code":"@udf(returnType=IntegerType())\ndef udf_swap_product(x, y):\n    x = x ^ y\n    y = x ^ y\n    x = x ^ y\n    return x*y"}

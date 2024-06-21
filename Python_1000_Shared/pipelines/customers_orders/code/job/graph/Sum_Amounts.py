@@ -4,7 +4,7 @@ from pyspark.sql.types import *
 from prophecy.utils import *
 from prophecy.libs import typed_lit
 from job.config.ConfigStore import *
-from job.udfs.UDFs import *
+from job.udfs import *
 
 def Sum_Amounts(spark: SparkSession, in0: DataFrame) -> DataFrame:
     df1 = in0.groupBy(col("customer_id"))

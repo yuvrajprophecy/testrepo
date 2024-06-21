@@ -1,0 +1,1 @@
+{"initCode":"initial=10","code":"@udf(returnType=ArrayType(IntegerType()))\ndef udf_arraytype(value, repeattimes):\n    return [value]*repeattimes"}

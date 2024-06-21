@@ -3,7 +3,12 @@
     "migrationVersions" : {
       "gemBuilderVersion" : "v1"
     },
-    "functions" : { },
+    "functions" : {
+      "businessRules" : {
+        "rules" : [ ],
+        "sharedRules" : [ ]
+      }
+    },
     "codeGenConfiguration" : {
       "editableConfig" : false,
       "plibVersion" : {
@@ -21,7 +26,7 @@
       "language" : "python",
       "udfs" : [ ],
       "functionPackageName" : "abhishekse2etestsprophecyioteam.helloworld.functions",
-      "sharedFunctionPackageNames" : [ "prophecy.warehouse.functions", "prophecy.spark_basic.functions" ]
+      "sharedFunctionPackageNames" : [ "prophecy.warehouse.functions", "prophecy.streaming.functions", "abhishekse2etestsprophecyioteam.configpythonhotfix.functions", "prophecy.webapp.functions", "sumitpaulprophecyioteam.prophecysparkmachinelearningpython.functions", "prophecy.spark_basic.functions" ]
     },
     "udafs" : {
       "language" : "python",
@@ -50,6 +55,36 @@
     "dependentProjectExternalDependencies" : [ {
       "projectUID" : "5",
       "projectName" : "ProphecyWarehousePython",
+      "externalDependencies" : [ ]
+    }, {
+      "projectUID" : "6",
+      "projectName" : "ProphecyStreamingPython",
+      "externalDependencies" : [ ]
+    }, {
+      "projectUID" : "193",
+      "projectName" : "1000ConfigPythonHotfix",
+      "externalDependencies" : [ {
+        "type" : "plibMaven",
+        "modifiedAt" : "2024-06-21T07:29:29.66524Z",
+        "name" : "plibMaven",
+        "version" : "8.0.11",
+        "id" : "1412837518",
+        "createdAt" : "2024-06-21T07:29:29.66524Z"
+      }, {
+        "type" : "plibPypi",
+        "modifiedAt" : "2024-06-21T07:29:29.66524Z",
+        "name" : "plibPypi",
+        "version" : "1.9.5",
+        "id" : "1789376982",
+        "createdAt" : "2024-06-21T07:29:29.66524Z"
+      } ]
+    }, {
+      "projectUID" : "7",
+      "projectName" : "ProphecyWebAppPython",
+      "externalDependencies" : [ ]
+    }, {
+      "projectUID" : "40",
+      "projectName" : "ProphecySparkMachineLearningPython",
       "externalDependencies" : [ ]
     }, {
       "projectUID" : "4",

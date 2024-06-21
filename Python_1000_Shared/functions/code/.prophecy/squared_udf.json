@@ -1,0 +1,1 @@
+{"initCode":"int_value=15\nN=10","code":"@udf(returnType=IntegerType())\ndef squared_offset(value=10):\n    return ((value*value) + int_value - float_value) if value else int_value"}

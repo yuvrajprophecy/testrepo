@@ -1,0 +1,1 @@
+{"initCode":"initial=10","code":"@udf(returnType=IntegerType())\ndef squared(value=10):\n    return (value*value)"}

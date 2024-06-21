@@ -4,7 +4,7 @@ from pyspark.sql.types import *
 from prophecy.utils import *
 from prophecy.libs import typed_lit
 from job.config.ConfigStore import *
-from job.udfs.UDFs import *
+from job.udfs import *
 
 def By_CustomerId(spark: SparkSession, in0: DataFrame, in1: DataFrame, ) -> DataFrame:
     return in0\
